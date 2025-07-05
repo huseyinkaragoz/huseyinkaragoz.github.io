@@ -1,1 +1,59 @@
-Hello
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting to Hüseyin Karagöz Portfolio</title>
+    <meta http-equiv="refresh" content="0; url=https://huseyinkaragoz.github.io/website/">
+    <link rel="canonical" href="https://huseyinkaragoz.github.io/website/">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .container {
+            text-align: center;
+            max-width: 600px;
+            padding: 2rem;
+        }
+        .spinner {
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-top: 3px solid white;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        a {
+            color: white;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Redirecting to Portfolio...</h1>
+        <div class="spinner"></div>
+        <p>You will be automatically redirected to my portfolio website.</p>
+        <p>If you are not redirected, <a href="https://huseyinkaragoz.github.io/website/">click here</a>.</p>
+    </div>
+    
+    <script>
+        // JavaScript redirect as backup
+        setTimeout(function() {
+            window.location.href = "https://huseyinkaragoz.github.io/website/";
+        }, 100);
+    </script>
+</body>
+</html> 
